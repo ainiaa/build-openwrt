@@ -6,27 +6,20 @@ on:
       rep_url:
         description: '仓库地址'     
         required: true
-        default: 'https://github.com/JiaY-shi/owrt.git'
+        default: 'https://github.com/openwrt/openwrt.git'
       branch_name:
         description: '分支'     
         required: true
-        default: 'ipq60xx-devel'
+        default: 'main'
         type: choice
         options:
         - main
-        - ipq60xx-devel
-        - ipq60xx-devel_nss
-        - mt798x-devel
       config_file:
         description: '配置文件'     
         required: true
-        default: 'gl-ax1800.config' 
+        default: 'gl-mt6000.config' 
         type: choice
         options:
-        - gl-ax1800.config
-        - gl-ax1800.nss.config
-        - gl-axt1800.config
-        - gl-axt1800.nss.config
         - gl-mt6000.config
 
 jobs:

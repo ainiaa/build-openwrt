@@ -7,15 +7,15 @@ config=$3   #配置文件
 
 
 if [ ! -n "$repo" ]; then
-    repo=https://github.com/JiaY-shi/owrt.git
+    repo=https://github.com/openwrt/openwrt.git
 fi
 
 if [ ! -n "$branch" ]; then
-    branch=ipq60xx-devel
+    branch=main
 fi
 
 if [ ! -n "$config" ]; then
-    config=gl-ax1800.config
+    config=gl-mt6000.config
 fi
 
 git clone -b $branch $repo ~/openwrt
